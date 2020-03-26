@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'AnironRegular';
+    src: url('fonts/Aniron-7BaP.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PartyBusinessRegular';
+    src: url('fonts/PartyBusiness-4B0K.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tengwar Annatar';
+    src: url('fonts/tengwar_annatar/tnganb.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+p, form, .card-text, .card-title, .dead, .reward {
+    font-family: 'PartyBusinessRegular', Helvetica, Arial, sans-serif;
+}
+
+.title2, li {
+    font-family: 'AnironRegular', Helvetica, Arial, sans-serif;
+}
+
+.symbol {
+    font-family: 'Tengwar Annatar', Helvetica, Arial, sans-serif;
+    font-size: 2.5rem;
+    padding: 10px;
+}
+
+
+.bg-orange, .btn{
+    background-color:#FF7E00;
+}
+
+.bg-black {
+    background-color: #020305;
+}
+
+.text-primary-color {
+    color: white;
+}
+
+.text-secondary-color {
+    color:#FF7E00;
+}
+
+section {
+    padding: 50px 30px;
+}
+
+.title2 {
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+}
+
+/*----nav bar----*/
+
+.navbar {
+    padding: 0 1rem;
+}
+
+.navbar-nav {
+    padding-left: 50px;
+}
+
+
+/*----Carousel----*/
+.carousel-caption {
+    bottom : 150px;
+}
+
+.quote {
+    font-size: 3.5rem;
+}
+
+.quote span {
+    font-size: 2.5rem;
+}
+
+
+/*----Fellows----*/
+
+#fellows {
+    background-image: url(./integration_maquette_finale/bg_light.png);
+    background-repeat: round;
+}
+
+.single-content{
+    position: relative;
+}
+
+.reward, .card-title {
+    position: absolute;
+    opacity: 0;
+    width: 200px;
+    height: auto;
+    top: 2.5vh;
+    left:50%;
+    margin-left: -100px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 0.25rem;
+}
+
+
+.card-hover:hover .reward {
+    position: absolute;
+    display: inline-block;
+    z-index:2;
+    opacity: 0.85;
+}
+
+.dead {
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    z-index:2;
+    opacity: 75%;
+    background-color: gray;
+    text-align: center;
+    font-size: 3rem;
+    padding: 2.5vh;
+}
+
+.card-title {
+    opacity: 1;
+    top: 50%;
+    z-index: 3;
+    font-size: 3rem;
+}
+
+.ereased {
+    text-decoration: #FF7E00 line-through;
+}
+
+.card-text {
+    font-size: 1.5rem;
+}
+
+hr {
+    border: 1px solid #FF7E00;
+    width: 50%;
+    margin:0 auto;
+}
+
+.card {
+    border: 3px solid #020305;
+}
+
+/*----Form----*/
+
+#contact {
+    background-image: url(./integration_maquette_finale/bg_dark.png);
+    background-repeat: round;
+}
+
+.btn {
+    align-self: flex-end;
+    width: 100px;
+    margin-top: 16px;
+    border: none;
+}
+
+.container-fluid {
+    padding: 0 50px;
+}
+.container-fluid li {
+   list-style: none;
+   margin: 10px 0;
+}
+
+@media (max-width: 576px) { 
+    button {
+        margin-bottom: 50px;
+    }
+}
+
+/*----Footer----*/
+
+footer div ul li img {
+    size: 1rem;
+}
+
